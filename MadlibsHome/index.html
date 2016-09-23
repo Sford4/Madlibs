@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Madlibs.css" type="text/css" media="screen">
+	<title>Spencer's Madlibs!</title>
+</head>
+<body>
+	<div id="password-page" class="password-start, password-page">
+		<div id="password-div">
+			<p id="username-text">Username (put whatever your heart desires):</p>
+			<input title="Username" id="username" type="text" placeholder="Your login ID">
+			<p id="password-text">Password (what is Sir Gallahad's favorite color?):</p>
+			<input title="Password" id="password" type="PASSWORD" name="password" placeholder="Your password">
+			<button type="button" id="submit-btn">Submit
+		</div>
+	</div>
+
+
+
+	<div id="mad-libs-page" class="mad-libs-blank, mad-libs-page"
+		<h1>Mad Lib Generator!!!</h1>
+		<p>Mad libs are stories with certain types of words missing, which you fill in on your own; the results are hi-LARIOUS.  Try putting in some of your own words (four per type of word, a comma between each word and NO SPACES), choose a story for them to be plugged into, then just hit submit!  WE WILL HAVE HOURS OF FUN.</p>
+
+		<div id="div-inputs">
+			Nouns: <input title="Nouns" id="noun-input" type="text" placeholder="Noun, Noun, Noun, Noun">
+			Verbs: <input title="Verbs" id="verb-input" type="text" placeholder="Verb, Verb, Verb, Verb">
+			Adjectives: <input title="Adjectives" id="adjective-input" type="text" placeholder="Adjective, Adjective, Adjective, Adjective">
+			Adverbs: <input title="Adverbs" id="adverb-input" type="text" placeholder="Adverb, Adverb, Adverb, Adverb">
+		</div>
+		
+		<div id="story-choice"
+			<form id="radio-buttons">
+				<input type="radio" name="story-radio" value="school" id="school">School
+				<input type="radio" name="story-radio" value="halloween" id="halloween">Halloween
+				<input type="radio" name="story-radio" value="mall" id="mall">The Mall
+			</form>
+		</div>
+		<div id="submit-button">
+			<button type="button" id="submit2">Submit</button>
+		</div>
+		<div id="stories"></div>
+
+
+		<p id="school-story" class="school-story">
+			I woke up today feeling <span class="adj1"></span>.  I got out of my <span class="noun1"></span> <span class="adv1"></span> and told my Mom I was <span class="adj2"></span>.  She <span class="verb1"></span> <span class="adv2"></span> and told me to quit begin such a <span class="noun2"></span>.  So I got on the school <span class="noun3"></span> and <span class="verb2"></span>ed into my seat. At school I felt <span class="adj3"></span> so I <span class="verb3"></span>ed to the bathroom so I wouldn't <span class="verb4"></span> <span class="adv3"></span> in front of everyone.  Alas, I <span class="verb1"></span>d all over the <span class="adj4"></span> <span class="noun4"></span> <span class="adv4"></span>.  It was a great day.
+			<img id="school-pic" src="http://vignette2.wikia.nocookie.net/dickfigures/images/5/52/DFTM_Clip_-_Elementary_School.png/revision/latest?cb=20130821122132">
+		</p>
+		<p id="halloween-story" class="halloween-story">
+			For Halloween this year I was a <span class="noun1"></span>.  I <span class="verb1"></span>ed my costume myself and it looked <span class="adj1"></span>.  My friends all dressed as <span class="adj2"></span> <span class="noun2"></span> and wanted to <span class="verb2"></span> <span class="adv1"></span> instead of Trick or Treat.  So I <span class="verb3"></span>ed alone with my <span class="noun3"></span>.  THree hours later I was <span class="adj3"></span> so I ate some <span class="noun4"></span> and went home to <span class="verb4"></span>.  My <span class="noun3"></span> was wearing a mask to look like a(n) <span class="adj4"></span> <span class="noun1"></span>, which made me want to cry <span class="adv2"></span>.
+			<img id="halloween-pic" src="http://wac.450f.edgecastcdn.net/80450F/q103albany.com/files/2011/10/Halloween-pumpkin.png">
+		</p>
+		<p id="mall-story" class="mall-story">
+			I want to go to the mall to buy some <span class="adj1"></span> <span class="noun1"></span>.  I'll also <span class="verb1"></span> by the foodcourt and <span class="verb2"></span> <span class="adv1"></span> at the shop that sells cakes shaped like <span class="adj2"></span> <span class="noun2"></span>.  I'll buy a <span class="noun3"></span> at Hot Topic (where it always smells <span class="adv2"></span>).  If I become <span class="adj3"></span> I'll look at a map to find the <span class="noun4"></span> store and <span class="verb3"></span> there as <span class="adv3"></span> as I could.  It's gonna be a(n) <span class="adj4"></span> day <span class="verb4"></span>ing <span class="adv4"></span> to my heart's delight.
+			<img id="mall-pic" src="http://thumbs.dreamstime.com/x/scene-inside-shopping-mall-vector-illustration-43847882.jpg">
+		</p>
+	</div>
+
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="MadlibsHome.js"></script>
+
+</body>
+</html>
+
+<!-- HOME PAGE, password enter with dotted out characters.  Then pulls up home menu with three options, story 1-3.
+hard code a passord that comes up in a pop up box when they click on ANYTHING on the page, like "woah there slugger you need the password!"  They enter it (What's the largest US state? -Alaska), box goes away and now everything on the page works.
+
+Please enter four of each, separated by commas:
+Nouns
+Adjectives
+Adverbs
+Verbs
+
+Radio button for each of the stories they can choose from
+
+Submit button  
+
+
+Stories:
+
+School
+
+I woke up today feeling ADJ.  I got out of my NOUN ADV and told my Mom I was ADJ.  She VERB ADV and told me to quit begin such a NOUN.  So I got on the school NOUN and VERB ed into my seat. At school I felt ADJ so I VERBED to the bathroom so I wouldn't VERB ADV in front of everyone.  Alas, I VERBed all over the ADJ NOUN ADV.  It was a great day.
+
+Halloween
+
+For Halloween this year I was a NOUN.  I VERBed my costume myself and it looked ADJ.  My friends all dressed as ADJ NOUN and wanted to VERB ADV instead of Trick or Treat.  So I VERB ed alone with my NOUN.  THree hours later I was ADJ so I ate some NOUN and went home to VERB.  My NOUN was wearing a mask to look like a(n) ADJ NOUN, which made me want to VERB ADV.  How ADJ I was then!
+
+The Mall
+
+I want to go to the mall to buy some ADJ NOUN.  I'll also VERB by the foodcourt and VERB ADV at the shop that sells cakes shaped like ADJ NOUN.  I'll buy a NOUN at Hot Topic (where it always smells ADV).  If I become ADJ I'll look at a map to find the NOUN store and VERB there as ADV as I could.  It's gonna be a(n) ADJ day VERBing to my heart's delight.-->
+

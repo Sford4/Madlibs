@@ -1,0 +1,62 @@
+.mad-libs-blank {
+	display: none;
+}
+
+#school-story {
+
+}
+
+#halloween-story {
+
+}
+
+#mall-story {
+
+}
+
+.school-story {
+	display: none;
+}
+
+.halloween-story {
+	display: none;
+}
+
+.mall-story {
+	display: none;
+}
+
+.password-blank {
+	display: none;
+}
+
+p {
+	display: inline-block;
+	text-align: center;
+}
+
+.password-page {
+	text-align: center;
+	margin: auto auto;
+}
+
+.mad-libs-page {
+	display: inline-block;
+	text-align: center;
+}
+
+
+#school-pic {
+	width: 400px;
+	height: 400px;
+}
+
+#halloween-pic {
+	width: 400px;
+	height: 400px;
+}
+
+#mall-pic {
+	width: 400px;
+	height: 400px;
+}
